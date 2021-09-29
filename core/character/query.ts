@@ -6,6 +6,8 @@ export const allCharacters = gql`
       results {
         id
         name
+        status
+        gender
       }
     }
   }

@@ -1,5 +1,5 @@
 import React from "react";
-import { Character } from "../../core/character/character";
+import { Character } from "interfaces/Character";
 import { DetailContainer } from './styles';
 import Image from 'next/image';
 
@@ -9,7 +9,6 @@ interface Props {
 
 const Container: React.FC<Props> = ({ character }) => {
   const {name, status, species, type, gender, image} = character;
-  console.log(image);
   
   return (
     <DetailContainer>

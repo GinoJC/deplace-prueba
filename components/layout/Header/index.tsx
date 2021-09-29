@@ -1,13 +1,27 @@
 import React from "react";
+import Link from "next/link";
+import { useRouter } from "next/router";
 import Search from "./Search";
 import Filter from "./Filter";
-import { HeaderContainer } from "./styles";
+import { HeaderContainer, BackButton } from "./styles";
 
 const Header: React.FC = () => {
+  const { pathname } = useRouter();
+  const backButton = pathname.includes("character") ? true : false;
+
   return (
     <HeaderContainer>
-      <Search/>
-      <Filter/>
+      {backButton ? (
+        <Link href="/">
+          <BackButton>{`< Back`}</BackButton>
+        </Link>
+      ) : (
+        <>
+          <Search/>
+          <Filter/>
+        </>
+      )}
+      
     </HeaderContainer>
   );
 };

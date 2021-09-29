@@ -1,7 +1,8 @@
 import React from "react";
 import { NextPage } from "next";
 import { CharactersContainer } from "components";
-import { Character, CharacterService } from "core/character/character";
+import { CharacterService } from "core/character/character";
+import { Character } from 'interfaces/Character';
 
 interface Props {
   characters: Character[];
@@ -15,7 +16,6 @@ export async function getServerSideProps() {
   const [characters] = await Promise.all([
     CharacterService.getAllCharacters(),
   ]);
-
   return { props: { characters } };
 }
 

@@ -1,15 +1,6 @@
 import client from "apollo-client";
 import { allCharacters, characterById } from "./query";
-
-export interface Character {
-  id: string;
-  name: string;
-  status: string;
-  species: string;
-  type: string;
-  gender: string;
-  image: string;
-}
+import { Character } from 'interfaces/Character';
 
 interface ICharacterService {
   getAllCharacters: () => Promise<Character[]>;
@@ -19,7 +10,6 @@ interface ICharacterService {
 const getAllCharacters = async () => {
   const { data } = await client.query({
     query: allCharacters,
-    
   });
   return data.characters.results;
 }

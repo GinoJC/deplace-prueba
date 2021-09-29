@@ -1,6 +1,7 @@
 import { NextPage } from "next";
 import Container from "components/Character/Character";
-import { Character as ICharacter, CharacterService } from "core/character/character";
+import { CharacterService } from "core/character/character";
+import { Character as ICharacter } from 'interfaces/Character';
 
 interface CharacterPageProps {
   character: ICharacter;
