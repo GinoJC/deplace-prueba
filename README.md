@@ -1,34 +1,14 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Soy Gino Carignano y esta es la resolución al desafío para Deplace:
 
-## Getting Started
+Se creó un listado de personajes de Rick and Morty, y si se selecciona a uno se abre una nueva pantalla con una imagen y detalles del personaje.
+La aplicación cuenta con un buscador que filtra por nombre y además un botón que abre un modal para filtrar entre géneros y estado de vida del personaje.
+La app fué hecha en NextJS, se utilizó Context para el manejo de estado y las consultas se hicieron utilizando Apollo y GraphQL.
+Aunque no es una buena práctica, agregué el archivo .env al repositorio para que puedan conectarse con la API.
+Para el apartado visual utilizé Style-Components ya que es una herramienta bastante utilizada y que dá mayor flexibilidad a la hora de crear los componentes.
 
-First, run the development server:
+La app fué deployada en Netlify, esta es la url: https://deplace-challenge-gc.netlify.app/
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Se utilizó yarn en vez de npm.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Para correr el proyecto primero lo deben instalar usando "yarn install".
+Luego pueden correrlo en modo dev con "yarn dev" o pueden crear el build con "yarn build" y ejecutarlo con "yarn start".

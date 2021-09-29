@@ -1,6 +1,7 @@
 module.exports = {
-  reactStrictMode: true,
-  images: {
-    domains: ['rickandmortyapi.com']
-  }
-}
+	reactStrictMode: true,
+	images: {
+		loader: 'imgix',
+		domains: ['rickandmortyapi.com'],
+	},
+};
