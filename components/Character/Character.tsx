@@ -1,5 +1,5 @@
-import React from "react";
-import { Character } from "interfaces/Character";
+import React from 'react';
+import { Character } from 'interfaces/Character';
 import { DetailContainer } from './styles';
 import Image from 'next/image';
 

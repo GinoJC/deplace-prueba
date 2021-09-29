@@ -1,6 +1,6 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext } from 'react';
 import { SearchContent, InputText, InputSubmit } from './styles';
-import { SearchContext } from "context/searchContext";
+import { SearchContext } from 'context/searchContext';
 
 const Search: React.FC = () => {
   const [search, setSearch] = useState('');

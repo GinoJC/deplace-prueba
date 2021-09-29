@@ -1,1 +1,1 @@
-export { default as CharactersContainer } from "./CharactersPage/Container";
+export { default as CharactersContainer } from './CharactersPage/Container';

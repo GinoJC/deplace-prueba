@@ -1,9 +1,9 @@
 import React, {useState, useEffect, useContext} from 'react';
 import Link from 'next/link';
-import { Character } from "interfaces/Character";
+import { Character } from 'interfaces/Character';
 import { ListElement } from './styles';
-import { SearchContext } from "context/searchContext";
-import { FilterContext } from "context/filterContext";
+import { SearchContext } from 'context/searchContext';
+import { FilterContext } from 'context/filterContext';
 
 interface Props {
   characters: Character[]
@@ -24,7 +24,7 @@ const Container: React.FC<Props> = ({characters}) => {
   return (
     <div>
     {characterList.map(character => 
-      <Link href={'/character/[id]'} as={`/character/${character.id}`} key={character.id}>
+      <Link href={'/character/[id]'} as={`/character/${character.id}`} key={character.id} passHref>
         <ListElement >
           <h1>{character.name}</h1>
         </ListElement>

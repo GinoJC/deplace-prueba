@@ -1,7 +1,7 @@
-import React from "react";
-import { NextPage } from "next";
-import { CharactersContainer } from "components";
-import { CharacterService } from "core/character/character";
+import React from 'react';
+import { NextPage } from 'next';
+import { CharactersContainer } from 'components';
+import { CharacterService } from 'core/character/character';
 import { Character } from 'interfaces/Character';
 
 interface Props {

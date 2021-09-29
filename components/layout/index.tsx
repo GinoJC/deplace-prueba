@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 import Header from './Header';
-import { GlobalContainer, ChildrenContainer, LayoutContainer } from "./styles";
+import { GlobalContainer, ChildrenContainer, LayoutContainer } from './styles';
 
 const Layout: React.FC = ({children}) => {
   return (
