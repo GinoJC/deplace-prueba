@@ -7,7 +7,7 @@ Aunque no es una buena práctica, agregué el archivo .env al repositorio para q
 Para el apartado visual utilizé Style-Components ya que es una herramienta bastante utilizada y que dá mayor flexibilidad a la hora de crear los componentes.
 
 La app fué deployada en Netlify, esta es la url: https://deplace-challenge-gc.netlify.app/
-
+El proyecto se subió a un repositorio de github: https://github.com/GinoJC/deplace-prueba
 Se utilizó yarn en vez de npm.
 
 Para correr el proyecto primero lo deben instalar usando "yarn install".
